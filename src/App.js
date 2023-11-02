@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Navbar';
+import Navbar from './navbar';
 import Card from './Card';
 import contact from './contact';
 

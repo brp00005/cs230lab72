@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="navbar navbar-dark bg-dark">
       <div className="container-fluid">
         <span className="navbar-brand mb-0 h1">Navbar</span>
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{display: "flex"}}>
           <li className="nav-item">
             <a className="nav-link active" aria-current="page" href="#">Home</a>
           </li>
