@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
 import Card from './Card';
+import contact from './contact';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
@@ -16,22 +17,9 @@ function App() {
       <Navbar />
       <Card />
 
-
       
     </div>
   );
-
-  <div className="App">
-   <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/card" element={<Card />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-        </Routes>
-   </BrowserRouter>
- </div>
-
 
 }
 
