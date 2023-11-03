@@ -2,23 +2,28 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-dark bg-dark">
-      <div className="container-fluid">
-        <span className="navbar-brand mb-0 h1">Navbar</span>
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{display: "flex"}}>
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+      <a className="navbar-brand" href="#" style={{ color: 'white' }}>Navbar</a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Home</a>
+            <a className="nav-link" href="#" style={{ color: 'white' }}>Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About</a>
+            <a className="nav-link" href="#" style={{ color: 'white' }}>About</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href=".\contact">Contact</a>
+            <a className="nav-link" href="#" style={{ color: 'white' }}>Contact</a>
           </li>
         </ul>
-        <form className="d-flex">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button className="btn btn-outline-success" type="submit">Search</button>
+        <form className="form-inline my-2 my-lg-0" style={{ marginLeft: 'auto' }}>
+          <div style={{ width: '200px', display: 'flex', justifyContent: 'flex-end' }}>
+            <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
+            <button className="btn btn-outline-success" type="submit" style={{ marginLeft: '5px' }}>Search</button>
+          </div>
         </form>
       </div>
     </nav>
